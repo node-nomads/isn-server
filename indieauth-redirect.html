@@ -7,11 +7,11 @@
     <link href="https://tokens.indieauth.com/token" rel="token_endpoint" />
     <title>Redirect to localhost-5001</title>
   </head>
-  <body onload="redirectToLocalhost()">
+  <body>
     <div>
       <h1>IndieAuth Redirect</h1>
       <p>Its just placeholder because we can't redirect to localhost:5001 from https://indieauth.com/auth.</p>
-      <button>Redirect to localhost:5001</button>
+      <button onclick="redirectToLocalhost()">Redirect to localhost:5001</button>
     </div>
     <script>
       function redirectToLocalhost() {

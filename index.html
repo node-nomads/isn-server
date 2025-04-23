@@ -6,12 +6,28 @@
     <title>ISN Server Login</title>
   </head>
   <body>
-    <form action="https://indieauth.com/auth" method="get">
-      <label for="indie_auth_url">Web Address:</label>
-      <input id="indie_auth_url" type="text" name="me" placeholder="yourdomain.com" />
-      <p><button type="submit">Sign In</button></p>
-      <input type="hidden" name="client_id" value="https://node-nomads.github.io/uk-mvp-site/" />
-      <input type="hidden" name="redirect_uri" value="https://node-nomads.github.io/uk-mvp-site/indieauth-redirect" />
-    </form>
+    <div>
+      <h1>ISN Server Login</h1>
+      <form action="https://indieauth.com/auth" method="get">
+        <label for="indie_auth_url">Web Address:</label>
+        <input
+          id="indie_auth_url"
+          type="text"
+          name="me"
+          placeholder="yourdomain.com"
+        />
+        <p><button type="submit">Sign In</button></p>
+        <input
+          type="hidden"
+          name="client_id"
+          value="https://node-nomads.github.io/uk-mvp-site/"
+        />
+        <input
+          type="hidden"
+          name="redirect_uri"
+          value="https://node-nomads.github.io/uk-mvp-site/indieauth-redirect"
+        />
+      </form>
+    </div>
   </body>
 </html>

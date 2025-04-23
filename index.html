@@ -3,6 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://indieauth.com/auth" rel="authorization_endpoint" />
+    <link href="https://tokens.indieauth.com/token" rel="token_endpoint" />
+    <link href="https://your.domain.tld/microsub/id" rel="microsub" />
     <title>ISN Server Login</title>
   </head>
   <body>
@@ -20,13 +23,14 @@
         <input
           type="hidden"
           name="client_id"
-          value="https://node-nomads.github.io/uk-mvp-site/"
+          value="https://node-nomads.github.io/isn-server/"
         />
         <input
           type="hidden"
           name="redirect_uri"
-          value="https://node-nomads.github.io/uk-mvp-site/indieauth-redirect"
+          value="https://node-nomads.github.io/isn-server/indieauth-redirect"
         />
+        <input name="state" type="hidden" value="nodeNomads">
       </form>
     </div>
   </body>
